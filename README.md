@@ -11,9 +11,9 @@ A Flask + PDF.js app that extracts and highlights ESG-related sentences from PDF
 
 1. **Clone the repository**
 ```bash
-git clone <https://github.com/KILLER-ALLLEY/ESG_EXTRACTOR_ADV.git>
-cd esg-sentence-analyzer
-````
+git clone https://github.com/KILLER-ALLLEY/ESG_EXTRACTOR_ADV.git
+cd ESG_EXTRACTOR_ADV
+
 
 2. **Create a virtual environment (recommended)**
 
