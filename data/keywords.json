@@ -1,0 +1,490 @@
+{
+  "keywords": [
+    {
+      "term": "GHG",
+      "variants": [
+        "GHG",
+        "Greenhouse Gas",
+        "Greenhouse Gas Emissions",
+        "carbon emissions",
+        "carbon footprint",
+        "CO2 emissions",
+        "Scope 1 emissions",
+        "Scope 2 emissions",
+        "Scope 3 emissions",
+        "methane emissions",
+        "fugitive emissions",
+        "emission reduction",
+        "carbon neutrality",
+        "carbon positive",
+        "net zero emissions"
+      ]
+    },
+    {
+      "term": "Climate Change",
+      "variants": [
+        "Climate Change",
+        "Global Warming",
+        "Climate Risk",
+        "Carbon Neutrality",
+        "Climate Adaptation",
+        "Climate Mitigation",
+        "Climate Resilience",
+        "Extreme Weather",
+        "Sea Level Rise",
+        "Transition Risk",
+        "Physical Climate Risk",
+        "Low Carbon Transition",
+        "Climate Policy",
+        "Paris Agreement",
+        "Decarbonization"
+      ]
+    },
+    {
+      "term": "Energy",
+      "variants": [
+        "Energy",
+        "Renewable Energy",
+        "Energy Efficiency",
+        "Energy Consumption",
+        "Energy Intensity",
+        "Clean Energy",
+        "Solar Power",
+        "Wind Power",
+        "Hydropower",
+        "Geothermal Energy",
+        "Bioenergy",
+        "Fossil Fuels",
+        "Energy Transition",
+        "Energy Security",
+        "Power Purchase Agreements",
+        "Green Power",
+        "Renewable Portfolio Standards"
+      ]
+    },
+    {
+      "term": "Water",
+      "variants": [
+        "Water",
+        "Water Conservation",
+        "Water Usage",
+        "Water Management",
+        "Water Efficiency",
+        "Water Stewardship",
+        "Wastewater Management",
+        "Stormwater Management",
+        "Water Pollution",
+        "Clean Water",
+        "Freshwater Protection",
+        "Water Scarcity",
+        "Water Withdrawal",
+        "Water Recycling",
+        "Aquifer Recharge",
+        "Water Footprint"
+      ]
+    },
+    {
+      "term": "Waste",
+      "variants": [
+        "Waste",
+        "Waste Management",
+        "Recycling",
+        "Circular Economy",
+        "Landfill Diversion",
+        "Zero Waste",
+        "Hazardous Waste",
+        "E-waste",
+        "Plastic Waste",
+        "Packaging Waste",
+        "Composting",
+        "Waste Reduction",
+        "Industrial Waste",
+        "Food Waste",
+        "Waste Segregation",
+        "Resource Recovery"
+      ]
+    },
+    {
+      "term": "Biodiversity",
+      "variants": [
+        "Biodiversity",
+        "Ecosystem Protection",
+        "Habitat Conservation",
+        "Deforestation",
+        "Reforestation",
+        "Afforestation",
+        "Wildlife Conservation",
+        "Endangered Species",
+        "Biodiversity Net Gain",
+        "Nature Positive",
+        "Forest Protection",
+        "Wetland Restoration",
+        "Pollinators",
+        "Marine Protection",
+        "Land Use Change",
+        "Biodiversity Hotspots"
+      ]
+    },
+    {
+      "term": "Labor Rights",
+      "variants": [
+        "Labor Rights",
+        "Human Rights",
+        "Worker Rights",
+        "Fair Treatment",
+        "Fair Labor Practices",
+        "Employee Rights",
+        "Collective Bargaining",
+        "Freedom of Association",
+        "Labor Standards",
+        "Child Labor",
+        "Forced Labor",
+        "Modern Slavery",
+        "Decent Work",
+        "Living Wage",
+        "Worker Protections",
+        "ILO Conventions"
+      ]
+    },
+    {
+      "term": "Diversity & Inclusion",
+      "variants": [
+        "Diversity",
+        "Equity",
+        "Inclusion",
+        "Equal Opportunity",
+        "Gender Equality",
+        "Racial Equity",
+        "Inclusive Culture",
+        "Employee Resource Groups",
+        "Non-discrimination",
+        "Gender Pay Gap",
+        "Workplace Diversity",
+        "Inclusive Leadership",
+        "Accessibility",
+        "LGBTQ+ Inclusion",
+        "Social Equity"
+      ]
+    },
+    {
+      "term": "Health & Safety",
+      "variants": [
+        "Health & Safety",
+        "Occupational Safety",
+        "Workplace Safety",
+        "Employee Wellbeing",
+        "Wellness Programs",
+        "Mental Health",
+        "Ergonomics",
+        "Safety Training",
+        "Incident Reporting",
+        "Injury Prevention",
+        "Safety Culture",
+        "Occupational Health",
+        "Emergency Preparedness",
+        "COVID-19 Response",
+        "Workplace Hygiene"
+      ]
+    },
+    {
+      "term": "Community Engagement",
+      "variants": [
+        "Community Engagement",
+        "Social Impact",
+        "Community Programs",
+        "Local Communities",
+        "Stakeholder Engagement",
+        "Philanthropy",
+        "Charitable Contributions",
+        "Volunteerism",
+        "Partnerships with NGOs",
+        "Education Programs",
+        "Community Investment",
+        "Local Development",
+        "Stakeholder Dialogue",
+        "Impact on Communities",
+        "Employee Volunteering"
+      ]
+    },
+    {
+      "term": "ESG Governance",
+      "variants": [
+        "ESG Governance",
+        "Corporate Governance",
+        "Ethical Practices",
+        "Transparency",
+        "Anti-Corruption",
+        "Anti-Bribery",
+        "Whistleblower Policy",
+        "Code of Ethics",
+        "Ethics Hotline",
+        "Governance Structure",
+        "Board Accountability",
+        "Shareholder Rights",
+        "Voting Rights",
+        "Business Integrity",
+        "Governance Policies"
+      ]
+    },
+    {
+      "term": "Board Oversight",
+      "variants": [
+        "Board Oversight",
+        "Board Diversity",
+        "Risk Management",
+        "Executive Accountability",
+        "Independent Directors",
+        "Board Committees",
+        "Audit Committee",
+        "Nomination Committee",
+        "Compensation Committee",
+        "Board Tenure",
+        "CEO Succession",
+        "Leadership Oversight",
+        "Board Evaluation",
+        "Corporate Oversight"
+      ]
+    },
+    {
+      "term": "Reporting & Compliance",
+      "variants": [
+        "ESG Reporting",
+        "Regulatory Compliance",
+        "Sustainability Disclosure",
+        "CSRD",
+        "TCFD",
+        "SEC ESG Rules",
+        "ISSB Standards",
+        "SASB Standards",
+        "GRI Standards",
+        "Integrated Reporting",
+        "Non-financial Disclosure",
+        "Double Materiality",
+        "ESG Transparency",
+        "ESG Metrics",
+        "Annual Sustainability Report"
+      ]
+    },
+    {
+      "term": "Supply Chain",
+      "variants": [
+        "Supply Chain",
+        "Supplier Management",
+        "Vendor Compliance",
+        "Supplier ESG",
+        "Sustainable Sourcing",
+        "Responsible Sourcing",
+        "Third-party Risk",
+        "Supply Chain Transparency",
+        "Supplier Audits",
+        "Supplier Diversity",
+        "Procurement Practices",
+        "Supply Chain Resilience",
+        "Conflict Minerals",
+        "Traceability",
+        "Ethical Sourcing"
+      ]
+    },
+    {
+      "term": "Certifications/Standards",
+      "variants": [
+        "ISO 14001",
+        "ISO 26000",
+        "GRI",
+        "PRI",
+        "CDP",
+        "UNGC",
+        "UN Global Compact",
+        "SBTi",
+        "Dow Jones Sustainability Index",
+        "FTSE4Good",
+        "LEED Certification",
+        "BREEAM",
+        "Fair Trade",
+        "Rainforest Alliance",
+        "EcoVadis"
+      ]
+    },
+    {
+      "term": "Tools & Frameworks",
+      "variants": [
+        "Life Cycle Assessment",
+        "LCA",
+        "Carbon Accounting",
+        "Sustainability Metrics",
+        "Footprinting Tools",
+        "Science-Based Targets",
+        "Scenario Analysis",
+        "Climate Stress Testing",
+        "Carbon Pricing",
+        "Sustainability KPIs",
+        "Impact Measurement Tools",
+        "Environmental Audits",
+        "Sustainability Dashboards"
+      ]
+    },
+    {
+      "term": "General ESG",
+      "variants": [
+        "ESG Initiatives",
+        "Sustainable Practices",
+        "Sustainability Goals",
+        "Net Zero",
+        "Corporate Responsibility",
+        "Impact Measurement",
+        "Environmental Impact",
+        "Social Responsibility",
+        "Sustainability Roadmap",
+        "ESG Commitments",
+        "Sustainable Development",
+        "Sustainability Strategy",
+        "Corporate Sustainability",
+        "Triple Bottom Line",
+        "Long-term Value Creation"
+      ]
+    },
+    {
+      "term": "Executive Compensation",
+      "variants": [
+        "Executive Compensation",
+        "Pay for Performance",
+        "Linking pay to ESG targets",
+        "Compensation tied to sustainability goals",
+        "Incentives linked to climate or social metrics",
+        "Executive Incentives",
+        "ESG-linked Bonuses",
+        "Leadership Remuneration",
+        "Performance-based Compensation",
+        "CEO Pay Ratio"
+      ]
+    },
+    {
+      "term": "Performance Management",
+      "variants": [
+        "Performance Management",
+        "Annual Milestones",
+        "Progress Tracking",
+        "Accountability for Targets",
+        "Goal Setting and Measurement",
+        "KPI Monitoring",
+        "ESG Scorecards",
+        "Performance Oversight",
+        "Non-financial KPIs"
+      ]
+    },
+    {
+      "term": "UN SDGs",
+      "variants": [
+        "UN Sustainable Development Goals",
+        "UN SDGs",
+        "Sustainable Development Goals",
+        "2030 Agenda",
+        "UN Agenda 2030",
+        "17 Global Goals",
+        "SDG Alignment",
+        "Sustainable Development Framework"
+      ]
+    },
+    {
+      "term": "Materiality & Stakeholders",
+      "variants": [
+        "Materiality Assessment",
+        "Double Materiality",
+        "Stakeholder Consultation",
+        "Stakeholder Priorities",
+        "ESG Topics of Concern",
+        "Stakeholder Mapping",
+        "Stakeholder Surveys",
+        "Material ESG Issues",
+        "Stakeholder Engagement Process"
+      ]
+    },
+    {
+      "term": "Ethics & Compliance",
+      "variants": [
+        "Anti-Bribery",
+        "Anti-Corruption",
+        "Whistleblower Policy",
+        "Code of Conduct",
+        "Ethical Business Practices",
+        "Fraud Prevention",
+        "Conflict of Interest",
+        "Legal Compliance",
+        "Governance Controls",
+        "Compliance Training"
+      ]
+    },
+    {
+      "term": "Sustainability Targets",
+      "variants": [
+        "Sustainability Commitments",
+        "ESG Targets",
+        "2030 Targets",
+        "2050 Net Zero Goal",
+        "Decarbonization Roadmap",
+        "Science-Based Targets",
+        "Reduction Goals",
+        "Carbon Neutrality Targets",
+        "Long-Term Sustainability Commitments"
+      ]
+    },
+    {
+      "term": "Supply Chain Human Rights",
+      "variants": [
+        "Forced Labor",
+        "Modern Slavery",
+        "Child Labor",
+        "Supplier Labor Rights",
+        "Ethical Sourcing",
+        "Human Trafficking",
+        "Labor Exploitation",
+        "Supplier Audits for Labor",
+        "Worker Exploitation in Supply Chains"
+      ]
+    },
+    {
+      "term": "Sustainable Finance",
+      "variants": [
+        "Green Bonds",
+        "ESG Investments",
+        "Impact Investing",
+        "Sustainable Finance",
+        "Responsible Investment",
+        "Sustainability-linked Loans",
+        "Climate Finance",
+        "ESG Funds",
+        "Sustainable Banking",
+        "Social Bonds"
+      ]
+    },
+    {
+      "term": "Climate Risk",
+      "variants": [
+        "Physical Climate Risk",
+        "Transition Risk",
+        "Scenario Analysis",
+        "Resilience Planning",
+        "Climate-Related Risks",
+        "Climate Adaptation Planning",
+        "Financial Climate Risk",
+        "TCFD Reporting",
+        "Risk Exposure to Climate"
+      ]
+    },
+    {
+      "term": "Sustainable Innovation",
+      "variants": [
+        "Green Technology",
+        "Sustainable Innovation",
+        "Clean Tech",
+        "Low-Carbon Solutions",
+        "Sustainability R&D",
+        "Eco-innovation",
+        "Green Products",
+        "Circular Design",
+        "Sustainable Materials",
+        "Green Infrastructure"
+      ]
+    }
+  ]
+}

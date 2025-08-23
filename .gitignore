@@ -1,0 +1,40 @@
+api_key
+api_key/
+paths.py
+venv
+__pycache__
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+
+# --- API Keys / sensitive files ---
+api_key/
+paths.py
+
+# --- VS Code ---
+.vscode/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs / temp ---
+*.log
+*.tmp
+*.bak
+
+# --- Node / frontend ---
+node_modules/
+dist/
+build/
+
+# --- PDFs or large files you don't want in repo ---
+*.pdf

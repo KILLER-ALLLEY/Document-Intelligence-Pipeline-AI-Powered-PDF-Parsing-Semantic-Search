@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sentences</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      margin: 24px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1f2937;
+      margin-bottom: 24px;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    input[type="file"] {
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 6px 14px;
+      border: none;
+      border-radius: 6px;
+      background-color: #1F4E79;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background-color: #4338ca;
+    }
+
+    hr {
+      margin: 24px 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #1F4E79;
+      color: white;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f9fafb;
+    }
+
+    tbody tr:hover {
+      background: #e0e7ff;
+      transition: background 0.2s;
+    }
+
+    a.btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      background-color: #3B5998;
+      color: white;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    a.btn:hover {
+      background-color: #3B5998;
+    }
+
+    a.btn.disabled {
+      background-color: #9ca3af;
+      cursor: not-allowed;
+    }
+
+    .alert {
+      margin: 16px 0;
+      padding: 12px 16px;
+      background-color: #fff3cd;
+      border: 1px solid #ffeeba;
+      border-radius: 6px;
+      color: #856404;
+    }
+
+    @media(max-width: 768px) {
+      th, td {
+        padding: 8px 10px;
+      }
+
+      form {
+        flex-direction: column;
+      }
+
+      button, input[type="file"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Sentences</h1>
+
+  <form action="{{ url_for('upload_pdf') }}" method="post" enctype="multipart/form-data">
+    <input type="file" name="pdf_file" accept="application/pdf" required>
+    <button type="submit">Upload PDF</button>
+  </form>
+  <hr>
+
+  {% if error %}
+    <div class="alert">
+      ⚠️ {{ error }}
+    </div>
+  {% endif %}
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sentence</th>
+        <th>Page</th>
+        <th>Go</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td>{{ r.sentence }}</td>
+        <td>{{ r.page_num }}</td>
+        <td>
+          <a href="#" class="btn disabled"
+             data-page="{{ r.page_num }}"
+             data-x0="{{ r.bbox[0] }}"
+             data-y0="{{ r.bbox[1] }}"
+             data-x1="{{ r.bbox[2] }}"
+             data-y1="{{ r.bbox[3] }}"
+             onclick="goToSentence(this); return false;">
+            Go
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <script>
+    let pdfTab = null;
+
+    {% if auto_open_pdf %}
+    window.onload = () => {
+      pdfTab = window.open("{{ auto_open_pdf }}", "_blank");
+    };
+    {% endif %}
+
+    window.addEventListener("message", e => {
+      if (e.data === "pdf_ready") {
+        document.querySelectorAll("a.btn.disabled").forEach(btn => btn.classList.remove("disabled"));
+      }
+    });
+
+    function goToSentence(btn) {
+      const page = btn.dataset.page;
+      const x0 = btn.dataset.x0;
+      const y0 = btn.dataset.y0;
+      const x1 = btn.dataset.x1;
+      const y1 = btn.dataset.y1;
+
+      if (!pdfTab || pdfTab.closed) {
+        pdfTab = window.open("{{ url_for('pdf_viewer') }}", "_blank");
+        setTimeout(() => {
+          pdfTab.postMessage({ page, x0, y0, x1, y1 }, "*");
+        }, 500);
+      } else {
+        pdfTab.postMessage({ page, x0, y0, x1, y1 }, "*");
+        pdfTab.focus();
+      }
+    }
+  </script>
+</body>
+</html>
