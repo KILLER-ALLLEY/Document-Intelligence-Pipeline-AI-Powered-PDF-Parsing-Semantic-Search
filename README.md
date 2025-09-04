@@ -1,5 +1,11 @@
 # Document Intelligence Pipeline
 
+![Python](https://img.shields.io/badge/Python-3.9-blue)  
+![Flask](https://img.shields.io/badge/Flask-Framework-lightgrey)  
+![SentenceTransformers](https://img.shields.io/badge/SentenceTransformers-Embeddings-orange)  
+![FAISS](https://img.shields.io/badge/FAISS-VectorDB-yellowgreen)  
+![License: MIT](https://img.shields.io/badge/License-MIT-green)  
+
 AI-powered PDF parsing & semantic search for scanned and digital documents.
 
 ---
