@@ -70,7 +70,7 @@ FAISS Vector DB → Semantic Search (Flask API) → Frontend (pdf.js)
 
 ```bash
 git clone https://github.com/KILLER-ALLLEY/Document-Intelligence-Pipeline-AI-Powered-PDF-Parsing-Semantic-Search.git
-cd Document-Intelligence-Pipeline-AI-Powered-PDF-Parsing-Semantic-Search.git
+cd Document-Intelligence-Pipeline-AI-Powered-PDF-Parsing-Semantic-Search
 pip install -r requirements.txt
 python app.py
 ```
