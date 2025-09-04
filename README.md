@@ -1,84 +1,91 @@
-# ESG Sentence Analyzer
+# Document Intelligence Pipeline
 
-A Flask + PDF.js app that extracts and highlights ESG-related sentences from PDFs (normal & scanned) and allows semantic search.
+AI-powered PDF parsing & semantic search for scanned and digital documents.
 
-## Features
-- Extracts sentences from normal PDFs and scanned PDFs using OCR fallback.
-- Highlights ESG-related sentences in the PDF viewer.
-- Keyword-based semantic search using sentence embeddings.
+---
 
-## Setup
+## 📖 Overview
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/KILLER-ALLLEY/ESG_EXTRACTOR_ADV.git
-cd ESG_EXTRACTOR_ADV
+The **Document Intelligence Pipeline** is an end-to-end system that extracts, processes, and searches text from both scanned and digital PDFs. It combines OCR, embeddings, and semantic search to help users find relevant information quickly — useful for ESG reports, invoices, contracts, research papers, and more.
 
+---
 
-2. **Create a virtual environment (recommended)**
+## 🚀 Features
 
-```bash
-python -m venv venv
-# Activate the environment:
-# Windows:
-venv\Scripts\activate
-# Mac/Linux:
-source venv/bin/activate
+* Parse **digital and scanned PDFs** (with OCR)
+* Extract text with **PyMuPDF** and **Tesseract OCR**
+* Generate **Sentence Transformer embeddings**
+* Store and query embeddings using **FAISS vector database**
+* Perform **semantic search** (not just keyword matching)
+* Highlight results in **frontend with pdf.js**
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python** (Flask backend)
+* **PyMuPDF** (text extraction)
+* **Tesseract OCR** (for scanned PDFs)
+* **Sentence Transformers** (embedding generation)
+* **FAISS** (vector similarity search)
+* **pdf.js** (frontend rendering and highlights)
+
+---
+
+## 🔎 Architecture
+
+### Flow:
+
+```
+PDF → OCR (Tesseract/PyMuPDF) → Sentence Transformer Embeddings →
+FAISS Vector DB → Semantic Search (Flask API) → Frontend (pdf.js)
 ```
 
-3. **Install dependencies**
+### Diagram:
+
+![Architecture](images/architecture.png)
+
+---
+
+## 📸 Screenshots
+
+**App UI:**
+![App UI](images/ui.png)
+
+**Search Demo:**
+![Search Demo](images/search_demo.png)
+
+---
+
+## 🎯 Use Cases
+
+* **ESG Reports** → highlight and extract sustainability insights
+* **Invoices** → detect and retrieve financial details
+* **Contracts** → find clauses and obligations quickly
+* **Research Papers** → locate references and keywords efficiently
+
+---
+
+## ⚙️ Installation
 
 ```bash
+git clone <your-repo-url>
+cd <your-repo>
 pip install -r requirements.txt
-```
-
-4. **Download NLTK data (for sentence tokenization)**
-
-```python
-import nltk
-nltk.download('punkt')
-```
-
-5. **Run the app**
-
-```bash
 python app.py
 ```
 
-6. **Open in browser**
+---
 
-```
-http://localhost:8080
-```
+## 🔮 Future Improvements
+
+* Multi-document semantic search
+* Fine-tuned embeddings for domain-specific tasks
+* Export results to CSV/JSON
+* Web-based interactive dashboard
 
 ---
 
-## Usage
+## 📜 License
 
-* Upload a PDF file (normal or scanned).
-* ESG-related sentences will be highlighted in the viewer.
-* Use the search box to find keywords and view relevant sentences.
-
----
-
-## Notes
-
-* Keep your API keys in the `api_key/` folder (ignored by Git).
-* Ensure `pdf.js` static files (`index.html`, `viewer.html`) are present for proper PDF viewing.
-* Small sample PDFs can be used for demo; avoid committing large files.
-
----
-
-## Demo Video
-
-[Watch here](https://www.loom.com/share/314735c7414d4129b421ac5b5a53c3e0?sid=fb5db2d4-044b-4db0-ac8a-7d97fdd9c5d9) 
-
----
-
-## Next Steps / Future Improvements
-
-* Deploy online for easy access.
-* Optimize OCR speed for scanned PDFs.
-* Improve UI/UX for better usability.
-* Enhance semantic search with more advanced embeddings.
----
+MIT License
