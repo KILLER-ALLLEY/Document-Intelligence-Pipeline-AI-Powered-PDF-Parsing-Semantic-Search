@@ -1,6 +1,5 @@
 api_key
 api_key/
-paths.py
 venv
 __pycache__
 
@@ -17,7 +16,6 @@ env/
 
 # --- API Keys / sensitive files ---
 api_key/
-paths.py
 
 # --- VS Code ---
 .vscode/
