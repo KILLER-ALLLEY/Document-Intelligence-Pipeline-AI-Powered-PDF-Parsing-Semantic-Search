@@ -20,7 +20,9 @@ RUN apt-get update && \
 COPY requirements.txt .
 
 # upgrade pip first (helps with some wheels)
+# IMPORTANT: install CPU torch BEFORE requirements to avoid CUDA installs
 RUN python -m pip install --upgrade pip setuptools wheel && \
+    pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu && \
     pip install --no-cache-dir -r requirements.txt
 
 # copy the rest of your app
