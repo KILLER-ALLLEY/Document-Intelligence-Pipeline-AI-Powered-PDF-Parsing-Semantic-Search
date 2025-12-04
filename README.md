@@ -1,5 +1,11 @@
 # Document Intelligence Pipeline
 
+![Python](https://img.shields.io/badge/Python-3.9-blue)  
+![Flask](https://img.shields.io/badge/Flask-Framework-lightgrey)  
+![SentenceTransformers](https://img.shields.io/badge/SentenceTransformers-Embeddings-orange)  
+![FAISS](https://img.shields.io/badge/FAISS-VectorDB-yellowgreen)  
+![License: MIT](https://img.shields.io/badge/License-MIT-green)  
+
 AI-powered PDF parsing & semantic search for scanned and digital documents.
 
 ---
@@ -69,8 +75,8 @@ FAISS Vector DB → Semantic Search (Flask API) → Frontend (pdf.js)
 ## ⚙️ Installation
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo>
+git clone https://github.com/KILLER-ALLLEY/Document-Intelligence-Pipeline-AI-Powered-PDF-Parsing-Semantic-Search.git
+cd Document-Intelligence-Pipeline-AI-Powered-PDF-Parsing-Semantic-Search
 pip install -r requirements.txt
 python app.py
 ```
