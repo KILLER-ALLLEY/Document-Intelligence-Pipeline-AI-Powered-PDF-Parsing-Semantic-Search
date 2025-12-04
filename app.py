@@ -46,7 +46,6 @@ def upload_pdf():
         print("🔍 Running semantic search...")
         search_results = run_semantic_search(embeddings_result)
 
-        # Handle structured errors from semantic search
         if isinstance(search_results, dict) and search_results.get("status") == "error":
             return render_template(
                 "index.html",
@@ -54,17 +53,14 @@ def upload_pdf():
                 error=search_results.get("message", "Unknown error during semantic search")
             )
 
-        # Filter only results with keyword matches
         results = [r for r in search_results if r.get("keywords")]
         print(f"🎯 Found {len(results)} results with keyword matches")
 
-        # Handle case where no ESG matches were found
         if not results:
             return render_template(
                 "index.html",
                 rows=[],
-                error="No ESG related content found in this document. "
-                      "Next steps: verify file and manually review."
+                error="No ESG related content found in this document. Verify file and review manually."
             )
 
         viewer_url = url_for("pdf_viewer")
@@ -94,5 +90,5 @@ def serve_pdf():
         mimetype="application/pdf"
     )
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+# IMPORTANT: remove app.run()
+# Gunicorn will run this app automatically

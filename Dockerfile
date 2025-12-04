@@ -19,11 +19,11 @@ RUN apt-get update && \
 # copy requirements and install python deps
 COPY requirements.txt .
 
-# upgrade pip first (helps with some wheels)
-# IMPORTANT: install CPU torch BEFORE requirements to avoid CUDA installs
+# upgrade pip first and install CPU torch BEFORE other requirements
 RUN python -m pip install --upgrade pip setuptools wheel && \
     pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir gunicorn
 
 # copy the rest of your app
 COPY . .
@@ -38,5 +38,5 @@ EXPOSE 8080
 ENV FLASK_ENV=production
 ENV PYTHONUNBUFFERED=1
 
-# default command to run your app
-CMD ["python", "app.py"]
+# run Gunicorn (production server)
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
